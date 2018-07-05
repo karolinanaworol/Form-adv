@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz-adv</title>
+    <link rel="stylesheet" href="style.css/main.css">
+</head>
+
+<body>
+    <header>A Simple Form</header>
+    <p>Form Fundamentals</p>
+
+    <form action="https://formspree.io/karolina.naworol@gmail.com" method="POST" autocomplete="on">
+        <div>
+            <div id="customer-info">Customer Info</div>
+            <label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required><br>
+            <label for="phone">Telephone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+            <span class="validity"></span>
+            <label for="mail">E-mail address:</label>
+            <input type="email" name="_replyto" id="mail" placeholder="Enter your email address" required><br>
+        </div>
+        <div>
+            <div id="books-to-choose">Books</div>
+            <input list="books">
+            <datalist id="books">
+              <option value="book1">
+              <option value="book2">
+              <option value="book3">
+              <option value="book4">
+              <option value="book5">
+          </datalist>
+            <label id="quantity">Quantity (Maximum 5)</label>
+            <input type="number" name="quantity" min="1" max="5">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
