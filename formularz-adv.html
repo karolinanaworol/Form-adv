@@ -12,18 +12,18 @@
     <p>Form Fundamentals</p>
 
     <form action="https://formspree.io/karolina.naworol@gmail.com" method="POST" autocomplete="on">
-        <div>
+        <div class="customer">
             <div id="customer-info">Customer Info</div>
-            <label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required><br>
-            <label for="phone">Telephone:</label>
+            <label for="name" class="label-name">Name:</label> <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required><br>
+            <label for="phone" class="label-phone">Telephone:</label>
             <input type="tel" name="phone" id="phone" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
             <span class="validity"></span>
-            <label for="mail">E-mail address:</label>
+            <label for="mail" class="label-mail">E-mail address:</label>
             <input type="email" name="_replyto" id="mail" placeholder="Enter your email address" required><br>
         </div>
-        <div>
+        <div class="books">
             <div id="books-to-choose">Books</div>
-            <input list="books">
+            <input list="books" class="titles">
             <datalist id="books">
               <option value="book1">
               <option value="book2">
@@ -31,10 +31,10 @@
               <option value="book4">
               <option value="book5">
           </datalist>
-            <label id="quantity">Quantity (Maximum 5)</label>
-            <input type="number" name="quantity" min="1" max="5">
+            <label id="quantity">Quantity (Maximum 5):</label>
+            <input type="number" name="quantity" min="1" max="5" class="choice">
         </div>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="button">
     </form>
 </body>
 
